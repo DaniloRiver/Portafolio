@@ -55,3 +55,30 @@ anime.timeline({loop: true})
     delay: 1000
   });
 });
+
+document.getElementById('cardTrigger').addEventListener('click', function() {
+  var modal = new bootstrap.Modal(document.getElementById('modalPeliculas'));
+  modal.show();
+});
+
+document.getElementById('cardTrigger2').addEventListener('click', function() {
+  var modal = new bootstrap.Modal(document.getElementById('modalRHH'));
+  modal.show();
+});
+
+document.getElementById('cardTrigger3').addEventListener('click', function() {
+  var modal = new bootstrap.Modal(document.getElementById('modalCursos'));
+  modal.show();
+});
+
+document.getElementById('cardTrigger8').addEventListener('click', function() {
+  var modal = new bootstrap.Modal(document.getElementById('modalMatricula'));
+  modal.show();
+});
+
+document.getElementById('cardTrigger7').addEventListener('click', function() {
+  var modal = new bootstrap.Modal(document.getElementById('modalMapas'));
+  modal.show();
+});
+
+

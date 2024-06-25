@@ -19,7 +19,7 @@ body #header{
 }
 
 #main{
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 
@@ -54,6 +54,12 @@ body #header{
     /* filter: grayscale(70%); */
 
 }
+
+/* #logo1{
+  width: 70px;
+  height: 35px;
+} */
+
 
 #carousel {
     position: relative;
@@ -140,7 +146,9 @@ body #header{
   
   .card button:hover {
     background-color: #f5f5f5;
-  }  
+  }
+  
+
 
   .card-title{
     color:#1ab5f2;
@@ -308,6 +316,8 @@ body #header{
   
   .parrafo1{
     color: white;
+    font-size: medium;
+    text-align: justify;
   }
 
   #header{
@@ -415,8 +425,8 @@ body #header{
   display: flex;
   align-items: center;
   overflow: hidden;
-  height: 50vh;
-  width: 50%;
+  height: 20vh;
+  width: 100%;
 }
 
 .bodypacman {
@@ -462,7 +472,7 @@ body #header{
   width: 100%;
 }
 .path::before {
-  background: #fff;
+  background:#00ffe5;
   border-radius: 50%;
   content: "";
   height: 1rem;
@@ -1173,17 +1183,17 @@ body #header{
   background-color: #081b29;
 
   padding:0;
-  margin:0;
-  height:90vh;
-  width:100vw;
+  margin:3px;
+  height:30vh;
+  width:50vw;
   display:flex;
-  align-items:center;
+  align-items:start;
   justify-content:center;
 }
 .backg{
   position:relative;
-  height:500px;
-  width:500px;
+  height:450px;
+  width:450px;
   border-radius:50%;
   background-color:rgba(0,0,0,0.1);
   transform:scale(0.7);
@@ -1200,7 +1210,7 @@ body #header{
 .r1{
   background-color: #ffbf80;
   height:20px;
-  width:110px;
+  width:90px;
   border-radius:10px;
   position: relative;
   top:60px;
@@ -1561,7 +1571,7 @@ body #header{
   position: absolute;
   left: 0;
   height: 100%;
-  width: 3px;
+  width: 2px;
   background-color: #fff;
   transform-origin: 0 50%;
 }
@@ -1573,5 +1583,16 @@ body #header{
 
 .ml11 .letter {
   display: inline-block;
-  line-height: 1em;
+  line-height: 0.5em;
 }
+
+.card {
+  position: relative;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.custom-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
