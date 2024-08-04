@@ -81,4 +81,66 @@ document.getElementById('cardTrigger7').addEventListener('click', function() {
   modal.show();
 });
 
+document.getElementById('cardTrigger9').addEventListener('click', function() {
+  var modal = new bootstrap.Modal(document.getElementById('modalBackendNet7'));
+  modal.show();
+});
+
+document.getElementById('cardTrigger6').addEventListener('click', function() {
+  var modal = new bootstrap.Modal(document.getElementById('modalSecurity'));
+  modal.show();
+});
+
+
+
+
+const swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  centerInsufficientSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+
+function openModal(imageSrc, title, description) {
+const modal = document.getElementById("myModalClose");
+const modalImg = document.getElementById("modalImage");
+const modalTitle = document.getElementById("modalTitle");
+const modalDescription = document.getElementById("modalDescription");
+
+modal.style.display = "block";
+modalImg.src = imageSrc;
+modalTitle.textContent = title;
+modalDescription.textContent = description;
+}
+
+function closeModal() {
+const modal = document.getElementById("myModalClose");
+modal.style.display = "none";
+}
+
 
